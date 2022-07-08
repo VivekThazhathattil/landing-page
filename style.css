@@ -3,6 +3,7 @@ html {
 }
 header{
    display:grid;
+   min-height: 50% !important;
    grid-template-columns: 1fr 0.5fr 0.1fr;
 }
 .bigger-h1{
@@ -110,6 +111,8 @@ button{
 }
 
 .no-makeup:hover{
+    background-color: #f2f2f2;
+    padding: 5px;
     border-bottom: 5px solid black;
 }
 
