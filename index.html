@@ -22,8 +22,8 @@ Date: 07/07/2022
     <meta name="robots" content="all, follow" />
 
     
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="res/favicon.png">
+    <link rel="icon" href="res/favicon.png" type="image/x-icon" />
     
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
@@ -37,7 +37,6 @@ Date: 07/07/2022
     <meta name="twitter:title" content="THE TITLE OF THIS WEBSITE" />
     <meta name="twitter:image" content="SUITABLE IMAGE TO ACCOMPANY LINK WHENEVER THIS URL IS SHARED ON TWITTER" />
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet" /> 
     
 </head>
@@ -61,9 +60,9 @@ Date: 07/07/2022
         </a>
     </div>
     <div class="horizontal-favicons">
-        <button class="favicon-button"><i class="fa fa-twitter"></i></button>
-        <button class="favicon-button"><i class="fa fa-instagram"></i></button>
-        <button class="favicon-button"><i class="fa fa-facebook"></i></button>
+        <button class="favicon-button"><img src="res/twitter-icon.png" class="icons"></button>
+        <button class="favicon-button"><img src="res/facebook-icon.png" class="icons"></button>
+        <button class="favicon-button"><img src="res/insta-icon.png" class="icons"></button>
     </div>
 </header>
 
@@ -102,17 +101,17 @@ Date: 07/07/2022
             <h1 class="bigger-h1"><b>Check Out Our Specialized Services</b></h1>
         </div>
 
-        <div class="black-bg right-rounded more-margin-down">
+        <div class="white-bg right-rounded more-margin-down wide-margin">
             <img src="res/illustration3.png" class="small-margin">
             <h3 class="small-margin">Discount Broking</h3>
             <p class="small-margin small-font lesser-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat.</p>
-            <button class="small-margin white-bg big-button">Learn More</button>
+            <button class="small-margin black-bg big-button">Learn More</button>
         </div>
 
-        <div class="white-bg right-rounded more-margin-down">
-            <img src="res/illustration4.png">
-            <h3>Portfolio Match</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="white-bg right-rounded more-margin-down wide-margin">
+            <img src="res/illustration4.png" class=""small-margin>
+            <h3 class="small-margin">Portfolio Match</h3>
+            <p class="small-margin small-font lesser-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <button class="small-margin black-bg big-button">Learn More</button>
         </div>
    </div>
@@ -244,7 +243,7 @@ Date: 07/07/2022
 
 <footer>
    <div class="three-equal-panes">
-       <div>
+       <div class="center-flex text-align-center">
             <h2>STOCKZO</h2>
             <div class="faint-font">
                 <b>
@@ -253,14 +252,14 @@ Date: 07/07/2022
                  <p>Vishala Complex, 1st Floor <br> Sector 7, HSR Layout, Bangalore <br> Karnataka, 560102</p>
                 </b>
             </div>
-            <div class="button-row">
-                <button class="favicon-button"><i class="fa fa-twitter"></i></button>
-                <button class="favicon-button"><i class="fa fa-instagram"></i></button>
-                <button class="favicon-button"><i class="fa fa-facebook"></i></button>
+            <div class="horizontal-favicons">
+                <button class="favicon-button"><img src="res/twitter-icon.png" class="icons"></button>
+                <button class="favicon-button"><img src="res/facebook-icon.png" class="icons"></button>
+                <button class="favicon-button"><img src="res/insta-icon.png" class="icons"></button>
             </div>
         </div>
 
-       <div>
+       <div class="center-flex text-align-center">
             <h2>MENU</h2>
             <div class="faint-font">
                 <b>
@@ -274,15 +273,19 @@ Date: 07/07/2022
        </div>
 
        <div>
-            <h2>Newsletter</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ut enim eaque</p>
-            <input type="text" class="white-bg bottom-border" placeholder="Subscribe">
-            <button class="black-bg bowel-corner medium-button">Done</button>
-            <div class="button-row center-flex-row">
-                <button class="no-decoration-button"><img class="fix-image" src="res/google_play_store.png"></button>
-                <button class="no-decoration-button"><img class="fix-image" src="res/apple_app_store.png"></button>
+            <h2 class="text-align-center">Newsletter</h2>
+            <p class="center-flex small-margin text-align-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ut enim eaque</p>
+            <div class="margin-top-bottom padding-top-bottom">
+                <div>
+                    <input type="text" class="white-bg bottom-border" placeholder="Subscribe">
+                    <button class="black-bg bowel-corner medium-button">Done</button>
+                </div>
+                <div class="button-row center-flex-row margin-top-bottom">
+                    <button class="no-decoration-button"><img class="fix-image" src="res/google_play_store.png"></button>
+                    <button class="no-decoration-button"><img class="fix-image" src="res/apple_app_store.png"></button>
+                </div>
             </div>
-       </div>
+        </div>
    </div>
     <hr class="hr-fix">
     <div class="more-margin-down">
