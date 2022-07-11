@@ -39,32 +39,34 @@ Date: 07/07/2022
     
     <link href="style.css" rel="stylesheet" /> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="greeting.js"></script
+    <script type="text/javascript" src="greeting.js"></script>
     
 </head>
 <header>
     <h1 id="home" class="title">STOCKZO</h1>
-    <div class="horizontal">
-        <a href="#home" class="no-makeup">
-            <p>HOME</p>
-        </a>
-        <a href="#about-us" class="no-makeup">
-            <p>ABOUT US</p>
-        </a>
-        <a href="#login" class="no-makeup">
-            <p>LOGIN</p>
-        </a>
-        <a href="#blogs" class="no-makeup">
-            <p>BLOGS</p>
-        </a>
-        <a href="#contact" class="no-makeup">
-            <p>CONTACT</p>
-        </a>
-    </div>
-    <div class="horizontal-favicons">
-        <button class="favicon-button"><img src="res/twitter-icon.png" class="icons"></button>
-        <button class="favicon-button"><img src="res/facebook-icon.png" class="icons"></button>
-        <button class="favicon-button"><img src="res/insta-icon.png" class="icons"></button>
+    <div class="header-clickable">
+        <div class="header-clickable-subcontainer">
+            <a href="#home" class="no-makeup padding-1rem-left">
+                HOME
+            </a>
+            <a href="#about-us" class="no-makeup padding-1rem-left">
+                ABOUT US
+            </a>
+            <a href="#login" class="no-makeup padding-1rem-left">
+                LOGIN
+            </a>
+            <a href="#blogs" class="no-makeup padding-1rem-left">
+                BLOGS
+            </a>
+            <a href="#contact" class="no-makeup padding-1rem-left">
+                CONTACT
+            </a>
+        </div>
+        <div>
+            <button class="favicon-button"><img src="res/twitter-icon.png" class="icons"></button>
+            <button class="favicon-button"><img src="res/facebook-icon.png" class="icons"></button>
+            <button class="favicon-button"><img src="res/insta-icon.png" class="icons"></button>
+        </div>
     </div>
 </header>
 
@@ -77,13 +79,13 @@ Date: 07/07/2022
             <button class="black-bg bowel-corner big-button">Get Started</button>
         </div>
         <div>
-            <img src="res/illustration1.png">
+            <img src="res/illustration1.png" class="restricted-img-size">
         </div>
    </div>
    <img src="res/page_separator.png" class="stretch-width">
    <div class="two-panes two-panes-reverse">
        <div>
-            <img src="res/illustration2.png">
+            <img src="res/illustration2.png" class="restricted-img-size">
        </div>
 
        <div>
@@ -103,18 +105,18 @@ Date: 07/07/2022
             <h1 class="bigger-h1"><b>Check Out Our Specialized Services</b></h1>
         </div>
 
-        <div class="white-bg right-rounded more-margin-down wide-margin">
-            <img src="res/illustration3.png" class="small-margin">
+        <div class="service-box white-bg right-rounded more-margin-down wide-margin">
+            <img src="res/illustration3.png" class="small-margin restricted-img-size">
             <h3 class="small-margin">Discount Broking</h3>
             <p class="small-margin small-font lesser-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat.</p>
-            <button class="small-margin black-bg big-button">Learn More</button>
+            <button class="small-margin black-bg big-button bowel-corner">Learn More</button>
         </div>
 
-        <div class="white-bg right-rounded more-margin-down wide-margin">
-            <img src="res/illustration4.png" class=""small-margin>
+        <div class="service-box white-bg right-rounded more-margin-down wide-margin">
+            <img src="res/illustration4.png" class="small-margin restricted-img-size">
             <h3 class="small-margin">Portfolio Match</h3>
             <p class="small-margin small-font lesser-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button class="small-margin black-bg big-button">Learn More</button>
+            <button class="small-margin black-bg big-button bowel-corner">Learn More</button>
         </div>
    </div>
    <img src="res/page_separator.png" class="stretch-width">
@@ -161,27 +163,27 @@ Date: 07/07/2022
             <a><h5 class="faint-font">Create Account</h5></a>
         </div>
         <div>
-            <img src="res/illustration5.png">
+            <img src="res/illustration5.png" class="restricted-img-size">
         </div>
     </div>
    <img src="res/page_separator.png" class="stretch-width">
    <h1><b>Here's what our users have to say:</b></h1>
    <div class="three-equal-panes">
-    <div class="white-bg right-rounded small-margin">
+    <div class="white-bg right-rounded small-margin user-opinion-box">
         <h1 class="small-margin"><b>01</b></h1>
         <h4 class="small-margin">KATIDHAN</h4>
         <p class="small-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <button class="small-margin black-bg bowel-corner big-button">Read More</button>
     </div>
 
-    <div class="white-bg right-rounded small-margin">
+    <div class="white-bg right-rounded small-margin user-opinion-box">
         <h1 class="small-margin"><b>02</b></h1>
         <h4 class="small-margin">Head of Strategic Marketing, IT Company</h4>
         <p class="small-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <button class="small-margin black-bg bowel-corner big-button">Read More</button>
     </div>
 
-    <div class="white-bg right-rounded small-margin">
+    <div class="white-bg right-rounded small-margin user-opinion-box">
         <h1 class="small-margin"><b>03</b></h1>
         <h4 class="small-margin">Abhay Gupta</h4>
         <p class="small-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -193,25 +195,25 @@ Date: 07/07/2022
    <div class="center-flex">
         <h1 id="blogs" class="text-align-center"><b>Blogs</b></h1>
         <div class="four-panes">
-            <div class="more-left-margin right-rounded white-bg boxed padding">
+            <div class="blog-box more-left-margin right-rounded white-bg boxed padding">
                  <h3>KATIDHAN</h3>
                  <p class="small-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                  <button class="black-bg bowel-corner big-button">Read More</button>
             </div>
 
-            <div class="'more-right-margin right-rounded white-bg boxed padding">
+            <div class="blog-box more-right-margin right-rounded white-bg boxed padding">
                  <h3>Head of Strategic Marketing, IT Company</h3>
                  <p class="small-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                  <button class="black-bg bowel-corner big-button">Read More</button>
             </div>
 
-            <div class="more-left-margin right-rounded white-bg boxed padding">
+            <div class="blog-box more-left-margin right-rounded white-bg boxed padding">
                  <h3>Head of Strategic Marketing, IT Company</h3>
                  <p class="small-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                  <button class="black-bg bowel-corner big-button">Read More</button>
             </div>
 
-            <div class="more-right-margin right-rounded white-bg boxed padding">
+            <div class="blog-box more-right-margin right-rounded white-bg boxed padding">
                  <h3>Head of Strategic Marketing, IT Company</h3>
                  <p class="small-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                  <button class="black-bg bowel-corner big-button">Read More</button>
@@ -224,7 +226,7 @@ Date: 07/07/2022
 
    <div class="two-panes-less-left black-bg">
        <div class="center-flex">
-           <img src="res/illustration6.png">
+           <img src="res/illustration6.png" class="restricted-img-size">
        </div>
 
        <div>
@@ -244,7 +246,7 @@ Date: 07/07/2022
 </body>
 
 <footer>
-   <div class="three-equal-panes">
+   <div class="footer-container">
        <div class="center-flex text-align-center">
             <h2>STOCKZO</h2>
             <div class="faint-font">
@@ -254,7 +256,7 @@ Date: 07/07/2022
                  <p>Vishala Complex, 1st Floor <br> Sector 7, HSR Layout, Bangalore <br> Karnataka, 560102</p>
                 </b>
             </div>
-            <div class="horizontal-favicons">
+            <div class="header-clickable-subcontainer-favicons">
                 <button class="favicon-button"><img src="res/twitter-icon.png" class="icons"></button>
                 <button class="favicon-button"><img src="res/facebook-icon.png" class="icons"></button>
                 <button class="favicon-button"><img src="res/insta-icon.png" class="icons"></button>
@@ -274,18 +276,16 @@ Date: 07/07/2022
             </div>
        </div>
 
-       <div>
+       <div class="newsletter-box">
             <h2 class="text-align-center">Newsletter</h2>
-            <p class="center-flex small-margin text-align-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ut enim eaque</p>
-            <div class="margin-top-bottom padding-top-bottom">
-                <div>
-                    <input type="text" class="white-bg bottom-border" placeholder="Subscribe">
-                    <button class="black-bg bowel-corner medium-button">Done</button>
-                </div>
-                <div class="button-row center-flex-row margin-top-bottom">
-                    <button class="no-decoration-button"><img class="fix-image" src="res/google_play_store.png"></button>
-                    <button class="no-decoration-button"><img class="fix-image" src="res/apple_app_store.png"></button>
-                </div>
+            <p class="small-margin text-align-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ut enim eaque</p>
+            <div class="subscribe-box">
+                <input type="text" class="white-bg bottom-border" placeholder="Subscribe">
+                <button class="black-bg bowel-corner medium-button">Done</button>
+            </div>
+            <div class="button-row center-flex-row margin-top-bottom">
+                <button class="no-decoration-button"><img class="fix-image" src="res/google_play_store.png"></button>
+                <button class="no-decoration-button"><img class="fix-image" src="res/apple_app_store.png"></button>
             </div>
         </div>
    </div>
