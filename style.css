@@ -1,8 +1,6 @@
-/*
 div, h2, h1, p{
     border: 1px red dashed;
 }
-*/
 html {
     scroll-behavior: smooth;
 }
@@ -229,13 +227,20 @@ button{
     align-items: center;
 }
 
+input{
+    min-height: 40px;
+}
+
 .input-container{
     display:flex;
-    flex-direction: row;
-    justify-content:stretch;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: stretch;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.spacing-down{
+    margin-bottom: 1.5rem;
 }
 
 .footer-container{
@@ -308,23 +313,13 @@ button{
     border-radius: 5px;
 }
 
-.bigger-input-box{
-    margin:10px;
-    min-width: 100px;
-    min-height: 50px;
-}
-
 .biggest-input-box{
-    min-width: 500px;
-    min-height: 300px;
+    min-width: min(500px, 80vw);
+    min-height: min(300px, 80vh);
 }
 
 input {
     text-align: left;
-    padding: 10px;
-}
-textarea{
-    padding: 10px;
 }
 ::-webkit-input-placeholder {
     text-align: left;
@@ -469,11 +464,6 @@ textarea{
         text-align: left;
     }
 
-    .biggest-input-box{
-        margin:10px;
-        min-width: 300px;
-        min-height: 200px;
-    }
     .filled-circle{
         height: 150px;
         width: 150px;
