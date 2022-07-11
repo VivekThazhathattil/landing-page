@@ -1,10 +1,14 @@
-/*
-div, h2, h1{
+div, h2, h1, p{
     border: 1px red dashed;
 }
-*/
 html {
     scroll-behavior: smooth;
+}
+button{
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.24); 
+}
+button:hover{
+    box-shadow: 0px 16px 24px 2px rgba(0,0,0,0.14) , 0px 6px 30px 5px rgba(0,0,0,0.12) , 0px 8px 10px -7px rgba(0,0,0,0.2);
 }
 header{
    display:flex;
@@ -32,10 +36,6 @@ header{
    margin-right: 10px;
 }
 
-.padding-1rem-left{
-    padding-left: 1rem;
-}
-
 .bigger-h1{
     font-size: 350%;
 }
@@ -49,6 +49,37 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    min-height: min(500px, 50vh);
+}
+
+.market-forecast-left-pane{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.about-us-right-pane{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.services-left-pane{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-box-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     min-height: min(500px, 50vh);
 }
 
@@ -174,11 +205,35 @@ button{
    grid-template-columns: 2fr 2fr 2fr;
 }
 
+.contact-right-pane{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container{
+    display:flex;
+    flex-direction: row;
+    justify-content:stretch;
+    align-items: stretch;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 .footer-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.footer-stockzo-subcontainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -243,7 +298,6 @@ button{
 }
 
 .biggest-input-box{
-    margin:10px;
     min-width: 500px;
     min-height: 300px;
 }
@@ -348,10 +402,6 @@ textarea{
        align-items: center;
        justify-content: space-evenly;
     }
-    .padding-1rem-left{
-        padding-left: 0px;
-        padding-bottom: 10px;
-    }
     .header-clickable-subcontainer{
        display: flex;
        flex-direction: column;
@@ -449,5 +499,12 @@ textarea{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+    .menu-box-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 0;
     }
 }

@@ -1,5 +1,5 @@
 <!--
-Title: STOCKZO website landing page
+Title: STOCKZO landing webpage
 Author: Vivek T.
 Date: 07/07/2022
 -->
@@ -73,7 +73,7 @@ Date: 07/07/2022
 <body>
    <hr>
    <div class="two-panes wide-margin">
-        <div class="centralize">
+        <div class="market-forecast-left-pane">
             <h1 class="bigger-h1"><b>Market Forecast</b></h1> 
             <p class="less-width">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti ullam sit ea aut dolorem et vitae nulla recusandae quos, ab aspernatur voluptas accusantium enim temporibus, fugit veniam id, neque possimus?</p>
             <button class="black-bg bowel-corner big-button">Get Started</button>
@@ -88,7 +88,7 @@ Date: 07/07/2022
             <img src="res/illustration2.png" class="restricted-img-size">
        </div>
 
-       <div>
+       <div class="about-us-right-pane">
             <h4 id="about-us">What is</h4>
             <h1>Stockzo?</h1>
             <p class="less-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -100,8 +100,8 @@ Date: 07/07/2022
    </div>
    <img src="res/page_separator.png" class="stretch-width">
    <div class="three-panes">
-        <div>
-            <h3>Services</h3>
+        <div class="services-left-pane">
+            <h1>Services</h1>
             <h1 class="bigger-h1"><b>Check Out Our Specialized Services</b></h1>
         </div>
 
@@ -229,14 +229,14 @@ Date: 07/07/2022
            <img src="res/illustration6.png" class="restricted-img-size">
        </div>
 
-       <div>
-            <h1 id="contact" class="wide-margin">CONTACT US NOW</h1>
-            <h1 class="bigger-h1 wide-margin">Ask a Question</h1>
+       <div class="contact-right-pane">
+            <h2 id="contact">CONTACT US NOW</h2>
+            <h1>Ask a Question</h1>
             <p class="faint-font small-font boxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             <div>
-                <div>
-                    <input type="text" placeholder="Full Name" class="black-bg faint-full-border bigger-input-box">
-                    <input type="text" placeholder="Email ID" class="black-bg faint-full-border bigger-input-box">
+                <div class="input-container">
+                    <input type="text" placeholder="Full Name" class="black-bg faint-full-border">
+                    <input type="text" placeholder="Email ID" class="black-bg faint-full-border">
                 </div>
                 <textarea placeholder="Message" class="black-bg faint-full-border biggest-input-box" rows="6" maxlength="3000" required></textarea>
             </div>
@@ -247,7 +247,7 @@ Date: 07/07/2022
 
 <footer>
    <div class="footer-container">
-       <div class="center-flex text-align-center">
+       <div class="footer-stockzo-subcontainer">
             <h2>STOCKZO</h2>
             <div class="faint-font">
                 <b>
@@ -263,16 +263,24 @@ Date: 07/07/2022
             </div>
         </div>
 
-       <div class="center-flex text-align-center">
+       <div class="text-align-center">
             <h2>MENU</h2>
-            <div class="faint-font">
-                <b>
-                    <p>Home</p>
-                    <p>About Us</p>
-                    <p>LOGIN UP</p>
-                    <p>Blogs</p>
-                    <p>Contact</p>
-                </b>
+            <div class="menu-box-bottom">
+                <a href="#home" class="no-makeup padding-1rem-left faint-font">
+                    <b>HOME</b>
+                </a>
+                <a href="#about-us" class="no-makeup padding-1rem-left faint-font">
+                    <b>ABOUT US</b>
+                </a>
+                <a href="#login" class="no-makeup padding-1rem-left faint-font">
+                    <b>LOGIN</b>
+                </a>
+                <a href="#blogs" class="no-makeup padding-1rem-left faint-font">
+                    <b>BLOGS</b>
+                </a>
+                <a href="#contact" class="no-makeup padding-1rem-left faint-font">
+                    <b>CONTACT</b>
+                </a>
             </div>
        </div>
 
