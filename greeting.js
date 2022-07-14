@@ -1,7 +1,7 @@
 
 
 $(document).ready(function() {
-    $("#login").text(function(){
+    $(".greeting").text(function(){
         var now = new Date();
         hours = now.getHours();
         var timeOfDay = ""
@@ -11,6 +11,6 @@ $(document).ready(function() {
             timeOfDay = "Morning";
         else
             timeOfDay = "Afternoon";
-        return "Hello!" + " Good " + timeOfDay + "!";
+        return " Good " + timeOfDay + "!";
     });
 });
