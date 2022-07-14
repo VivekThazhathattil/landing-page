@@ -2,6 +2,10 @@
     border: red 1px dashed;
 }*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -796,9 +800,7 @@ li{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: flex;
-    margin-left: 8rem;
-    
+    margin-bottom: 5rem; 
 }
 
 
