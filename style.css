@@ -183,14 +183,28 @@ li{
     padding-right: 1rem;
  }
 
+
  .btn-second-component .btn1{
      background-color: black;
      color: white;
+ }
+
+ .btn-second-component .btn1:hover{
+     background-color: rgb(138, 134, 134);
+     color: black;
+     transition: all 0.2s ease;
  }
  
  .btn-second-component .btn2{
      background: rgb(196, 192, 192);
      color: black;
+ }
+
+ .btn-second-component .btn2:hover{
+     background-color: white;
+     color: black;
+     border: 2px rgb(196,192,192) solid;
+     transition: all 0.2s ease;
  }
 
 
@@ -683,6 +697,13 @@ li{
     color: white;
 }
 
+.seventh-component-card button:hover{
+     color: black;
+     background: rgb(190, 186, 186);
+     border: 2px solid black;
+     transition: all 0.2s ease;
+}
+
 .see-more-btn{
     text-align: center;
     padding: 4.3rem;
@@ -696,6 +717,13 @@ li{
     color: white;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.see-more-btn button:hover{
+    background: white;
+    color: black;
+    border: 2px black solid;
+    transition: all 0.2s ease;
 }
 
 
@@ -719,7 +747,7 @@ li{
 
 .content-eighth-component{
     margin-top: 4rem;
-    margin-right: 5rem;
+    margin-right: 2rem;
 }
 
 .content-eighth-component h3{
@@ -983,7 +1011,7 @@ li{
        margin: 1rem;
     }
     .sixth-component-card-mega-grid{
-        margin: 3rem;
+        margin: 1rem;
     }
     .sixth-component-card1{
         padding: 1rem;
@@ -1032,7 +1060,7 @@ li{
         align-items: center;
     }
     .content-eighth-component{
-        margin: 3rem;
+        margin: 0rem 1rem 0rem 1rem;
     }
 }
 
