@@ -1002,7 +1002,7 @@ li{
         align-items: center;
     }
     .content-fifth-component{
-        margin: 0rem;
+        margin: 1rem;
         grid-row-end: -1;
     }
     /* Sixth component */
