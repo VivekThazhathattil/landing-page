@@ -146,6 +146,7 @@ li{
      justify-items: center;
      align-items: center;
      gap: 5rem;
+     margin: 2rem;
  }
 
 .content-second-component{
@@ -776,7 +777,6 @@ li{
 /* footer  */
 
 .footer{
-    min-height: 450px;
     background-color: whitesmoke;
 }
 
@@ -814,7 +814,8 @@ li{
 .menu-footer{
     margin-top: 4rem;
     display: grid;
-    justify-content: center;
+    justify-content: start;
+    align-items: start;
 }
 
 .menu-footer h1{
@@ -942,13 +943,11 @@ li{
     /* Third component */
 
     .third-component{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 2fr;
-        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
-        gap: 0rem;
-        margin: 3rem;
+        margin: 1rem;
         overflow: visible;
     }
     .card-grid{
@@ -981,6 +980,7 @@ li{
        display: grid;
        grid-template-columns: auto;
        grid-template-rows: repeat(3, 1fr);
+       margin: 1rem;
     }
     .sixth-component-card-mega-grid{
         margin: 3rem;
@@ -1038,11 +1038,11 @@ li{
 
 @media(max-width:675px){
     .grid-container{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        align-items: start;
-        justify-items: center;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: flex-start;
+
         background-color: whitesmoke;
         border-bottom: 1px solid black;
     }
@@ -1059,6 +1059,8 @@ li{
     }
     .menu-footer{
         margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align:center;
     }
     
     .menu-footer h1{
