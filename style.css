@@ -49,15 +49,14 @@ li{
 }
 
 .menu-items-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    display: grid;
+    margin-bottom: 0.25rem;
 }
 
 .menu-items-header ul{
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .menu-items-header li a{
@@ -77,7 +76,7 @@ li{
 
 .social-media-icons-header{
     color: black;
-    margin-bottom: 0.3rem;
+    margin-right: 1rem;
 }
 
 .social-media-icons-header ul{
@@ -88,6 +87,20 @@ li{
 .social-media-icons-header ul li a{
     margin: 6px;
     font-size: 17px;
+}
+
+.favicons{
+    height: 40px;
+    width: 40px;
+    border-radius: 999px;
+}
+
+@media(max-width:900px){
+    .favicons{
+        height: 30px;
+        width: 30px;
+        border-radius: 999px;
+    }
 }
 
 /*  First Component  */
@@ -245,7 +258,7 @@ li{
     background: black;
     color: rgb(255, 255, 255);
     border: none;
-    min-width: 20rem;
+    min-width: auto;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0,.2);
@@ -257,7 +270,7 @@ li{
     background: rgb(196, 193, 193);
     color:black;
     border: none;
-    min-width: 20rem;
+    min-width: auto;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0,.2);
@@ -271,7 +284,7 @@ li{
 
  .card-img img{
      display: block;
-     width: auto;
+     width: 100%;
      margin-bottom: 2rem;    
      aspect-ratio: 16/12;
      object-fit: cover;
@@ -811,6 +824,7 @@ li{
 
 .company-footer{
     margin-top: 4rem; 
+    margin-right: 2rem;
 }
 
 .company-footer h1{
@@ -818,7 +832,7 @@ li{
 }
 
 .company-footer ul li{
-    padding: 1rem 0rem;
+    padding: 0.4rem 0rem;
     color: rgb(107, 107, 107);
 }
 
@@ -833,13 +847,13 @@ li{
 
 .menu-footer{
     margin-top: 4rem;
-    display: grid;
     justify-content: start;
     align-items: start;
+    text-align: center;
 }
 
 .menu-footer h1{
-    margin-bottom: 0rem;
+    margin-bottom: 0.5rem;
 }
 
 .menu-footer ul li{
@@ -853,12 +867,14 @@ li{
 
 .newsletter-footer{
     margin-top: 4rem;
+    margin-left: 2rem;
     display: grid;
     justify-content: center;
+    margin-bottom: 4rem;
 }
 
 .newsletter-footer h1{
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .newsletter-footer p{
@@ -922,6 +938,10 @@ li{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .social-media-icons-header{
+        margin: 10vw;
+        margin-top: 0vw;
     }
 
     /* First comopnent */
@@ -1027,16 +1047,16 @@ li{
        justify-items: center;
     }
     .seventh-component-card1{
-        margin: 3rem;
+       margin: 2vw;
     }
     .seventh-component-card2{
-        margin: 3rem;
+       margin: 2vw;
     }
     .seventh-component-card3{
-        margin: 3rem;
+       margin: 2vw;
     }
     .seventh-component-card4{
-        margin: 3rem;
+       margin: 2vw;
     }
 
     /* Eighth component */
@@ -1045,9 +1065,8 @@ li{
         min-height: auto;
         background: black;
         color: white;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 1.2fr;
+        display: flex;
+        flex-direction: column;
         justify-items: center;
         align-items: center;
     }
@@ -1067,7 +1086,7 @@ li{
         border-bottom: 1px solid black;
     }
     .company-footer{
-        margin-top: 2rem; 
+        margin: 2rem; 
     }
     
     .company-footer h1{
@@ -1077,9 +1096,11 @@ li{
     .company-footer .social-media-icons-footer li{
        margin-right: 0rem;
     }
+    .social-media-icons-footer li{
+        margin: 5vw;
+    }
     .menu-footer{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin: 2rem;
         text-align:center;
     }
     
@@ -1088,8 +1109,7 @@ li{
     }
     
     .newsletter-footer{
-        grid-column: 1/4;
-        margin-top: 0rem;
+        margin: 2rem;
     }
     
     .newsletter-footer h1{
@@ -1136,7 +1156,7 @@ li{
  }
 
 .content-second-component{
-    margin-right: 0vw;    
+    margin: 3vw;    
 }
 
 .content-second-component h4{
@@ -1152,6 +1172,7 @@ li{
  .btn-second-component{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: auto;
  }
  .btn-second-component button{
@@ -1204,6 +1225,11 @@ li{
 
 .card-footer .learn-more-btn{
      font-size: 4vw;
+ }
+
+ .card2{
+     padding: 5vw;
+     margin: 0vw;
  }
 
     /* Fifth component */
@@ -1334,13 +1360,26 @@ li{
     margin-bottom: 2vw;
  }
 
+    /* Seventh comopnent */
+
+    seventh-component{
+        min-height: auto;
+    }
+
+    seventh-component-card{
+        margin: 2vw;
+    }
+
     /* Eighth component */
 
+    .eighth-component{
+        min-height: auto;
+    }
     .eighth-component-img{
         margin: 0%;
     }
     .content-eighth-component{
-        margin: 0%;
+        margin: 5vw;
     }
     .content-eighth-component h3{
         font-size: 12vw;
@@ -1356,7 +1395,6 @@ li{
      width: 75vw;
       color: white;
       padding: 5vw;
-      margin: 5vw 5vw 0 5vw;
     }
     .see-more-btn{
         padding: 4.3vw;
@@ -1365,5 +1403,40 @@ li{
         padding: 5vw;
         width: 50vw;
         font-size: 7vw;
+    }
+    .grid-container{
+        margin: 4vw;
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        margin-bottom: 20vw;
+        border-bottom: 1px solid black;
+        flex-wrap: wrap;
+    }
+    .newsletter-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0vw;
+        margin-top: 4vw;
+        margin-bottom: 5vw;
+    }
+    
+    .newsletter-footer h1{
+        margin-bottom: 10vw;
+    }
+    
+    .newsletter-footer p{
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter-footer input{
+        border-color: grey;
+        max-width: 50vw;
+    }
+    
+    .newsletter-footer footer-input-btn  button{
+        
+        display: flex;
     }
 }
