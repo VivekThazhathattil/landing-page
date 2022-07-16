@@ -56,7 +56,7 @@ li{
 .menu-items-header ul{
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .menu-items-header li a{
@@ -159,12 +159,14 @@ li{
     margin-top: 8rem;
     margin-bottom: 8rem;
     padding: 2rem;
+    border: 2px black solid;
 }
 
 .blog-card:hover{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border: 2px rgb(107, 107, 107) solid;
+    transition: all 1s ease;
 }
 
 /* Third container */
