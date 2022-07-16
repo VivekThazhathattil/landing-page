@@ -95,11 +95,19 @@ li{
     border-radius: 999px;
 }
 
-@media(max-width:900px){
+@media(max-width:950px){
     .favicons{
         height: 30px;
         width: 30px;
         border-radius: 999px;
+    }
+    .header{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 7fr 1fr;
+    }
+    .logo-header{
+        grid-area: 1 / 1 / 1 / 9;
     }
 }
 
@@ -437,6 +445,12 @@ li{
     max-width: 450px;
     margin: 2rem 0 2rem 0;
     background: black;
+ }
+
+ .input-data{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
  }
 
  .input-fifth-component .input-data{
@@ -904,11 +918,11 @@ li{
 
 @media(max-width:800px){
     .header{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr  3fr 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         height: auto;
-        border-bottom: 1.5px solid black;
     }
     .logo-header{
         font-weight: bold;
@@ -940,8 +954,7 @@ li{
         justify-content: center;
     }
     .social-media-icons-header{
-        margin: 10vw;
-        margin-top: 0vw;
+        margin: 2vw 0 2vw 0;
     }
 
     /* First comopnent */
@@ -1086,7 +1099,8 @@ li{
         border-bottom: 1px solid black;
     }
     .company-footer{
-        margin: 2rem; 
+        margin: 5vw; 
+        text-align: center;
     }
     
     .company-footer h1{
@@ -1096,12 +1110,18 @@ li{
     .company-footer .social-media-icons-footer li{
        margin-right: 0rem;
     }
+    .social-media-icons-footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
     .social-media-icons-footer li{
         margin: 5vw;
     }
     .menu-footer{
-        margin: 2rem;
-        text-align:center;
+        margin: 5vw;
+        text-align: center;
     }
     
     .menu-footer h1{
@@ -1109,7 +1129,7 @@ li{
     }
     
     .newsletter-footer{
-        margin: 2rem;
+        margin: 5vw;
     }
     
     .newsletter-footer h1{
@@ -1392,7 +1412,6 @@ li{
         font-size: 4vw;
     }
     .input-fields input{
-     width: 75vw;
       color: white;
       padding: 5vw;
     }
