@@ -389,7 +389,6 @@ li{
 
     .first-container-right-content{
         margin: 2vw;
-        margin-left: 0rem;
         background-color: #37474F;
     }
 
@@ -399,13 +398,13 @@ li{
     }
 
     .blog-card-image{
-        margin-bottom: 2vw;
-        margin-top: 2vw;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 
     .blog-card{
         margin: 5vw;
-        padding: 0vw;
+        padding: 2vw;
     }
 
     /* Third container */
