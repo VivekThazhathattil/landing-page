@@ -1,4 +1,4 @@
-/*div, img{
+/*div, img, .menu-items{
     border: red 1px dashed;
 }*/
 
@@ -56,10 +56,11 @@ li{
 
 .menu-items-header ul{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
-.menu-items-header ul li a{
+.menu-items-header li a{
    display: grid;
    margin-left: 0.3rem;
    margin-right: 0.3rem;
@@ -69,15 +70,9 @@ li{
    color: black;
 }
 
-.menu-items-header ul li a:hover{
+.menu-items-header li a:hover{
     font-weight: bold;
     transition: all 0.5s smooth;
-}
-
-.menu-items{
-    display: flex;
-    align-items: baseline;;
-    justify-content: flex-end;
 }
 
 .social-media-icons-header{
@@ -270,16 +265,13 @@ li{
     padding: 2rem;
  }
 
- 
- 
-
  .card-img{
      overflow: hidden;
  }
 
  .card-img img{
      display: block;
-     width: 100%;
+     width: auto;
      margin-bottom: 2rem;    
      aspect-ratio: 16/12;
      object-fit: cover;
@@ -439,8 +431,6 @@ li{
  }
 
  .input-fifth-component .input-data input{
-    height: 100%;
-    width: 100%;
     border: none;
     border-bottom: 1.2px solid white;
     background: black;
@@ -962,7 +952,7 @@ li{
     }
 
     .content-second-component{
-        margin: 0 5rem 0 5rem;
+        margin: 0 2rem 0 2rem;
     }
 
     .btn-second-component{
@@ -1112,5 +1102,268 @@ li{
     
     .newsletter-footer footer-input-btn  button{
         display: flex;
+    }
+}
+
+@media(max-width:400px){
+    /*  First Component  */
+    
+    .first-component{
+        min-height: auto;
+        background-color: white;
+        margin: 2vw;
+    }
+
+    .content-first-component{
+        margin: 5vw;
+    }
+    
+    .content-first-component h1{
+        font-size: 15vw;
+    }
+    
+    .content-first-component p{
+        font-size: 4vw;
+    }
+     .content-first-component button{
+         border: none;
+         padding: 5vw 10vw ;
+         font-size: 5vw;
+     }
+    /* Second component */
+.second-component{
+     margin: 2vw;
+ }
+
+.content-second-component{
+    margin-right: 0vw;    
+}
+
+.content-second-component h4{
+    font-size: 10vw;
+}
+.content-second-component h1{
+    font-size: 15vw;
+    margin-bottom: 5vw;
+}
+ .content-second-component p{
+    margin-bottom: 5vw;
+ }
+ .btn-second-component{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+ }
+ .btn-second-component button{
+     font-size: 4vw;
+    margin-right: 0rem;
+    height: 8vh;
+    width: 5vw;
+    margin: 0.5rem 0 0.5rem 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+ }
+
+ /* Third component */
+ .content-third-component h4{
+    font-size: 10vw;
+ }
+
+ .card-grid{
+     max-width: 90vw;
+     margin: 0;
+ }
+
+ .card{
+     padding: 5vw;
+     margin: 0vw;
+ }
+
+ .content-third-component h1{
+     font-size: 15vw;
+ }
+
+ .card-img{
+     overflow: visible;
+ }
+
+ .card-img img{
+     display: flex;
+     width: 50vw;
+ }
+
+.card-header{
+     font-size: 15vw;
+ }
+
+.card-body{
+     font-size: 5vw;
+     width: auto;
+     height: auto;
+ }
+
+.card-footer .learn-more-btn{
+     font-size: 4vw;
+ }
+
+    /* Fifth component */
+ .content-fifth-component h1{
+    font-size: 15vw;
+    color: white;
+    line-height: 4.5rem;
+    
+ }
+ .content-fifth-component p{
+    font-size: 5vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+ }
+ .input-fifth-component .input-data input{
+    font-size: 1rem;
+ }
+ .input-data input:focus ~ label,
+ .input-data input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 2vw;
+    
+ }
+
+ .input-fifth-component .input-data label{
+    bottom: 10px;
+    left: 0px;
+ }
+
+    /* Sixth Component */
+ .sixth-component {
+      min-height: auto;
+ }
+
+ .sixth-component-card-mega-grid{
+     margin: 2vw;
+ }
+
+ .sixth-component h1{
+    margin: 10vw;
+    font-size: 15vw;
+ }
+
+ .sixth-component-card1{
+    background: black;
+    margin: 1vw;
+ }
+
+ .sixth-component-card1 h1{
+    margin: 10vw 1vw;
+    margin-bottom: 10vw;
+ }
+
+ .sixth-component-card1 h3{
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+ }
+
+ .sixth-component-card1 p{
+    margin-left: 2vw;
+    font-size: 5vw;
+    margin-bottom: 5vw;
+ }
+
+ 
+ .sixth-component-card1 button{
+    padding: 5vw;
+    width: 50vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+ }
+
+ .sixth-component-card2{
+    background: black;
+    margin: 1vw;
+ }
+
+ .sixth-component-card2 h1{
+    margin: 10vw 1vw;
+    margin-bottom: 10vw;
+ }
+
+ .sixth-component-card2 h3{
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+ }
+
+ .sixth-component-card2 p{
+    margin-left: 2vw;
+    font-size: 5vw;
+    margin-bottom: 5vw;
+ }
+
+ 
+ .sixth-component-card2 button{
+    padding: 5vw;
+    width: 50vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+ }
+
+ .sixth-component-card3{
+    background: black;
+    margin: 1vw;
+ }
+
+ .sixth-component-card3 h1{
+    margin: 10vw 1vw;
+    margin-bottom: 10vw;
+ }
+
+ .sixth-component-card3 h3{
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+ }
+
+ .sixth-component-card3 p{
+    margin-left: 2vw;
+    font-size: 5vw;
+    margin-bottom: 5vw;
+ }
+
+ 
+ .sixth-component-card3 button{
+    padding: 5vw;
+    width: 50vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+ }
+
+    /* Eighth component */
+
+    .eighth-component-img{
+        margin: 0%;
+    }
+    .content-eighth-component{
+        margin: 0%;
+    }
+    .content-eighth-component h3{
+        font-size: 12vw;
+    }
+    
+    .content-eighth-component h1{
+        font-size: 15vw;
+    }
+    .content-eighth-component p{
+        font-size: 4vw;
+    }
+    .input-fields input{
+     width: 75vw;
+      color: white;
+      padding: 5vw;
+      margin: 5vw 5vw 0 5vw;
+    }
+    .see-more-btn{
+        padding: 4.3vw;
+    }
+    .see-more-btn button{
+        padding: 5vw;
+        width: 50vw;
+        font-size: 7vw;
     }
 }
