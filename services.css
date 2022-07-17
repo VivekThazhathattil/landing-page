@@ -297,362 +297,259 @@ li{
 }
 
 /* end - header related */
-/*    First Component    */
-
-.first-component{
-    min-height: 670px;
-    background-color: white;
-}
-
-.first-component-content{
-    margin: 9rem 3rem;
-    position: absolute;
-    max-width: 750px;
-}
-
-.first-component-content h4{
-    font-weight: 500;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 2rem;
-}
-.first-component-content p{
-    font-size: 60px;
-    font-weight: bold;
-    
-}
-
-
-
-/*    Second Component   */
-
-.second-component{
-    width: 100%;
-    min-height: 760px;
-    background-color: black;
-}
-
-.second-component-card{
-    
-    background-color: black;
-    height: 270px;
-    display: grid;
-    grid-template-columns: 3rem 1fr 1fr 1fr 3rem;
-    
-}
-
-.second-component-card-2{
-    margin-top: 0rem;
-    background-color: black;
-    height: 270px;
-    display: grid;
-    grid-template-columns: 3rem 1fr 1fr 1fr 3rem;
-}
-
-.second-component-card-2 h1{
-    color: white;
-    text-align: center;
-    font-size: 24px;
-}
-
-.second-component-card1{
-    width: 200px;
-   grid-column: 2/3;
-   margin: 5rem 3rem;
-
-}
-
-.second-component-card2{
-    width: 200px;
-    grid-column: 3/4;
-    margin: 5rem 13rem;
-
-}
-
-.second-component-card3{
-    width: 200px;
-    grid-column: 4/5;
-    margin: 4rem 4rem;
-}
-
-.second-component-card h1{
-     font-size: 24px;
-     text-align: center;
-     color: white;
-    
-}
-
-.img-border{
-    background-color: white;
-    border-radius: 50%;
-    width: 110px;
-    height: 110px;
-    margin: 2rem 2.4rem;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.img-border img{
-    margin: 0.7rem 0.8rem;
-    height: 85px;
-}
-
-hr{
-    margin-top: 3rem;
-    color: white;
-    font-weight: bold;
-}
-
-
-/*   Third Component   */
-
-.third-component{
+.our-product-container{
     min-height: 700px;
-    display: grid;
-    grid-template-columns: 5rem 1fr 1fr 7rem;
-}
-
-
-.third-component-img{
-    margin-top: 5rem ;
-    grid-column: 2/3;
-}
-
-.third-component-img img{
-    height: 500px;
-}
-.third-component-content{
-   
-   display: flex;
-   flex-direction: column;
-   align-items: flex-end; 
-   grid-column: 3/4;
-  margin-top: 14rem;
-   
-   
-   
-}
-
-
-
-.third-component-content h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    display: flex;
-    margin-bottom: 2rem;
-    margin-right: 10rem;
-
-}
-
-.third-component-content p{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    max-width: 500px;
-    margin-bottom: 2rem;
-    font-size: 18px;
-}
-
-
-
-/*    Fourth Component   */
-
-.fourth-component{
-    min-height: 750px;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 6rem 1fr 1fr 5rem;
-}
-
-
-
-.fourth-component-content{
-    margin: 12rem 0rem;
-    color: white;
-    grid-column: 2/3;
-}
-
-.fourth-component-content h1{
-    color: white;
-    font-weight: bold;
-    font-size: 65px;
-}
-
-.fourth-component-content p{
-    max-width: 450px;
-    margin-top: 1rem;
-}
-
-.fourth-component-img{
-   
-    grid-column: 3/4;
-    margin-top: 5rem ;
-}
-
-.fourth-component-img img{
-   height: 500px;
-}
-
-/*   Fifth Component   */
-
-
-
-.fifth-component{
-    min-height: 700px;
-    display: grid;
-    grid-template-columns: 5rem 1fr 1fr 5rem;
-   
-    
-}
-
-.fifth-component-img{
-    grid-column: 2/3;
-}
-
-.fifth-component-img img{
-    height: 500px;
-    margin-top: 3rem;
-   
-}
-
-.content-fifth-component{
-    display: flex;
-   flex-direction: column;
-   align-items: flex-end; 
-    grid-column: 3/4;
-    margin-top: 8rem;
-}
-
-.content-fifth-component h1{
-    font-size: 60px;
-    margin-bottom: 1.5rem;
-    margin-right: 14rem;
-}
-
-.content-fifth-component p{
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-
-
-/*  Sixth Component   */
-
-
-.sixth-component{
-    min-height: 700px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 6rem;
-    background-color: black;
-    
-}
-
-.content-sixth-component{
-    color: white;
-    margin: 12rem 8rem;
-}
-
-.content-sixth-component h1{
-    font-size: 60px;
-    margin-bottom: 0.6rem;
-    font-weight: bold;
-    
-}
-
-.content-sixth-component p{
-    max-width: 600px;
-    margin-top: 1rem;
-    font-size: 19px;
-
-}
-
-.sixth-component-img{
-    display: flex;
-    grid-column: 2/3;
+    align-items: center;
     justify-content: center;
-    margin-top: 3rem;
+    text-align:center;
 }
 
-.sixth-component-img img{
-    height: 500px;
+.our-product-container p{
+    font-size: 3rem;
+    font-weight: 700;
 }
 
+.our-product-container h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
 
-
-/*    seventh  Component   */
-
-.seventh-component{
+.flowdiagram-container{
     min-height: 700px;
-    background-color: white;
+}
+
+.open-wallet-container{
+    min-height: 700px;
     display: grid;
-    grid-template-columns: 6rem 1fr 1fr 4rem;
-
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
-.seventh-component-img{
-    grid-column: 2/3;
-    margin-top: 4rem;
-    
-    
+.open-wallet-container div{
+    margin: 5rem;
 }
 
-.seventh-component-img img{
-    height: 500px;
-    
+.open-wallet-container h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
 }
 
-.content-seventh-component{
-   
-    grid-column: 3/4;
-    margin-top: 8rem;
-    
-}
-
-.content-seventh-component h1{
-    font-size: 55px;
-    
-}
-.content-seventh-component p{
-    font-size: 21px;
-    width: 500px;
-    margin-top: 1.4rem;
-}
-
-
-/*    Eighth Component   */
-
-.eighth-component{
+.social-investing-container{
     min-height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: black;
-    position: absolute;
+    color:white;
+    justify-items: center;
+    align-items: center;
+}
+
+.social-investing-container div{
+    margin: 5rem;
+}
+
+.social-investing-container h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.instant-cash-container{
+    min-height: 700px;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    justify-items: center;
+    align-items: center;
+    margin: 5rem;
 }
 
-.content-eighth-component{
-    color: white;
-    margin: 12rem 6rem;
+.instant-cash-container h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
 }
 
-.content-eighth-component h1{
-   font-size: 60px;
-   margin-bottom: 0.7rem;
+.portfolio-management-container{
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color:white;
+    justify-items: center;
+    align-items: center;
 }
 
-.content-eighth-component p{
-    margin-top: 1.5rem;
-    width: 500px;
-    font-size: 20px;
+.portfolio-management-container div{
+    margin: 5rem;
 }
 
-.eighth-component-img{
-   grid-column: 2/3;
-   margin: 5rem 0rem 3rem 0rem;
+.portfolio-management-container h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+
 }
 
-.eighth-component-img img{
-    height: 500px;
+.finance-management-container{
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    justify-items: center;
+    align-items: center;
+    margin: 5rem;
 }
-    
+
+.finance-management-container h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.finance-calculator-container{
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color:white;
+    justify-items: center;
+    align-items: center;
+}
+
+.finance-calculator-container div{
+    margin: 5rem;
+}
+
+.finance-calculator-container h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+
+@media(max-width:800px){
+    .our-product-container{
+        min-height: 500px;
+    }
+
+    .our-product-container p{
+        font-size: 7vw;
+        font-weight: 700;
+    }
+
+    .our-product-container h1{
+        font-size: 10vw;
+        margin-bottom: 2rem;
+    }
+
+    .flowdiagram-container{
+        min-height: auto;
+    }
+
+    .open-wallet-container{
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .open-wallet-container div{
+        margin: 10vw;
+    }
+
+    .open-wallet-container h1{
+        font-size: 10vw;
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+
+    .social-investing-container{
+        min-height: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-investing-container div{
+        margin: 10vw;
+    }
+
+    .social-investing-container h1{
+        font-size: 10vw;
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+
+    .instant-cash-container{
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10vw;
+    }
+
+    .instant-cash-container h1{
+        font-size: 10vw;
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-management-container{
+        min-height: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-management-container div{
+        margin: 10vw;
+    }
+
+    .portfolio-management-container h1{
+        font-size: 10vw;
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+
+    .finance-management-container{
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10vw;
+    }
+
+    .finance-management-container h1{
+        font-size: 10vw;
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+
+    .finance-calculator-container{
+        min-height: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .finance-calculator-container div{
+        margin: 10vw;
+    }
+
+    .finance-calculator-container h1{
+        font-size: 10vw;
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+}
