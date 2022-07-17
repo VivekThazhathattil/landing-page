@@ -179,10 +179,12 @@ li{
 
     .navigation{
         display: block;
+        height: auto;
     }
     
     /* Hamburger */
     .hamburger1 {
+        border: 2px solid red;
       height: 45px;
       display: -ms-grid;
       margin-bottom: 1rem;
@@ -300,362 +302,283 @@ li{
 }
 
 /* end - header related */
-/*    First Component    */
 
-.first-component{
-    min-height: 670px;
-    background-color: white;
+/* First container */
+.first-container{
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
-.first-component-content{
-    margin: 9rem 3rem;
+.first-container-left-content{
+    max-height: 70vh;
+    position: relative;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.first-container-absolute-content{
     position: absolute;
-    max-width: 750px;
-}
-
-.first-component-content h4{
-    font-weight: 500;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 2rem;
-}
-.first-component-content p{
-    font-size: 60px;
-    font-weight: bold;
-    
-}
-
-
-
-/*    Second Component   */
-
-.second-component{
-    width: 100%;
-    min-height: 760px;
     background-color: black;
-}
-
-.second-component-card{
-    
-    background-color: black;
-    height: 270px;
-    display: grid;
-    grid-template-columns: 3rem 1fr 1fr 1fr 3rem;
-    
-}
-
-.second-component-card-2{
-    margin-top: 0rem;
-    background-color: black;
-    height: 270px;
-    display: grid;
-    grid-template-columns: 3rem 1fr 1fr 1fr 3rem;
-}
-
-.second-component-card-2 h1{
     color: white;
-    text-align: center;
-    font-size: 24px;
+    opacity: 80%;
+    width: 70%;
+    height: 80%;
 }
 
-.second-component-card1{
-    width: 200px;
-   grid-column: 2/3;
-   margin: 5rem 3rem;
-
+.first-container-absolute-content h1{
+    margin-left: 1rem;
+    margin-top: 2rem;
 }
 
-.second-component-card2{
-    width: 200px;
-    grid-column: 3/4;
-    margin: 5rem 13rem;
-
+.first-container-absolute-content p{
+    margin-left: 1rem;
+    margin-top: 2rem;
 }
 
-.second-component-card3{
-    width: 200px;
-    grid-column: 4/5;
-    margin: 4rem 4rem;
+.first-container-right-content{
+    margin: 2rem;
+    margin-left: 0rem;
+    background-color: #37474F;
 }
 
-.second-component-card h1{
-     font-size: 24px;
-     text-align: center;
-     color: white;
-    
+/* Second container */
+.second-container{
+    min-height: 90vh;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;;
 }
 
-.img-border{
-    background-color: white;
-    border-radius: 50%;
-    width: 110px;
-    height: 110px;
-    margin: 2rem 2.4rem;
-    background-position: center;
-    background-size: cover;
+.blog-card-image{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     overflow: hidden;
 }
 
-.img-border img{
-    margin: 0.7rem 0.8rem;
-    height: 85px;
-}
-
-hr{
-    margin-top: 3rem;
-    color: white;
-    font-weight: bold;
-}
-
-
-/*   Third Component   */
-
-.third-component{
-    min-height: 700px;
-    display: grid;
-    grid-template-columns: 5rem 1fr 1fr 7rem;
-}
-
-
-.third-component-img{
-    margin-top: 5rem ;
-    grid-column: 2/3;
-}
-
-.third-component-img img{
-    height: 500px;
-}
-.third-component-content{
-   
-   display: flex;
-   flex-direction: column;
-   align-items: flex-end; 
-   grid-column: 3/4;
-  margin-top: 14rem;
-   
-   
-   
-}
-
-
-
-.third-component-content h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    display: flex;
-    margin-bottom: 2rem;
-    margin-right: 10rem;
-
-}
-
-.third-component-content p{
+.blog-card{
+    text-align: start;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    max-width: 500px;
-    margin-bottom: 2rem;
-    font-size: 18px;
-}
-
-
-
-/*    Fourth Component   */
-
-.fourth-component{
-    min-height: 750px;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 6rem 1fr 1fr 5rem;
-}
-
-
-
-.fourth-component-content{
-    margin: 12rem 0rem;
-    color: white;
-    grid-column: 2/3;
-}
-
-.fourth-component-content h1{
-    color: white;
-    font-weight: bold;
-    font-size: 65px;
-}
-
-.fourth-component-content p{
-    max-width: 450px;
-    margin-top: 1rem;
-}
-
-.fourth-component-img{
-   
-    grid-column: 3/4;
-    margin-top: 5rem ;
-}
-
-.fourth-component-img img{
-   height: 500px;
-}
-
-/*   Fifth Component   */
-
-
-
-.fifth-component{
-    min-height: 700px;
-    display: grid;
-    grid-template-columns: 5rem 1fr 1fr 5rem;
-   
-    
-}
-
-.fifth-component-img{
-    grid-column: 2/3;
-}
-
-.fifth-component-img img{
-    height: 500px;
-    margin-top: 3rem;
-   
-}
-
-.content-fifth-component{
-    display: flex;
-   flex-direction: column;
-   align-items: flex-end; 
-    grid-column: 3/4;
+    align-items: flex-start;
+    justify-content: flex-start;
     margin-top: 8rem;
+    margin-bottom: 8rem;
+    padding: 2rem;
+    border: 2px black solid;
 }
 
-.content-fifth-component h1{
-    font-size: 60px;
-    margin-bottom: 1.5rem;
-    margin-right: 14rem;
+.blog-card:hover{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px rgb(107, 107, 107) solid;
+    transition: all 1s ease;
 }
 
-.content-fifth-component p{
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-
-
-/*  Sixth Component   */
-
-
-.sixth-component{
-    min-height: 700px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 6rem;
+/* Third container */
+.third-container{
+    min-height: 90vh;
     background-color: black;
-    
-}
-
-.content-sixth-component{
     color: white;
-    margin: 12rem 8rem;
-}
-
-.content-sixth-component h1{
-    font-size: 60px;
-    margin-bottom: 0.6rem;
-    font-weight: bold;
-    
-}
-
-.content-sixth-component p{
-    max-width: 600px;
-    margin-top: 1rem;
-    font-size: 19px;
-
-}
-
-.sixth-component-img{
     display: flex;
-    grid-column: 2/3;
-    justify-content: center;
-    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.sixth-component-img img{
-    height: 500px;
-}
-
-
-
-/*    seventh  Component   */
-
-.seventh-component{
-    min-height: 700px;
-    background-color: white;
+.third-container-subcontainer{
     display: grid;
-    grid-template-columns: 6rem 1fr 1fr 4rem;
-
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.seventh-component-img{
-    grid-column: 2/3;
-    margin-top: 4rem;
-    
-    
-}
-
-.seventh-component-img img{
-    height: 500px;
-    
-}
-
-.content-seventh-component{
-   
-    grid-column: 3/4;
-    margin-top: 8rem;
-    
-}
-
-.content-seventh-component h1{
-    font-size: 55px;
-    
-}
-.content-seventh-component p{
-    font-size: 21px;
-    width: 500px;
-    margin-top: 1.4rem;
+.third-container-button{
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 15px;
+    margin: 4rem;
 }
 
 
-/*    Eighth Component   */
+/*---------------------- 950 (800, 675, 400) ------------------------ */
 
-.eighth-component{
-    min-height: 700px;
-    background-color: black;
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    width: 100%;
+@media(max-width:950px){
+    .favicons{
+        height: 30px;
+        width: 30px;
+        border-radius: 999px;
+    }
+    .header{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 7fr 1fr;
+    }
+    .logo-header{
+        grid-area: 1 / 1 / 1 / 9;
+    }
 }
 
-.content-eighth-component{
-    color: white;
-    margin: 12rem 6rem;
+/*---------------------- 800 (900, 675, 400)------------------------ */
+
+@media(max-width:800px){
+
+    /* First container */
+    .first-container{
+        min-height: auto;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: auto;
+    }
+
+    .first-container-left-content{
+        min-height: 60vh;
+        max-height: auto;
+        position: relative;
+        margin: 2rem 2rem 2rem 2rem;
+    }
+
+    .first-container-absolute-content{
+        position: absolute;
+        background-color: black;
+        color: white;
+        opacity: 80%;
+        width: 70%;
+        height: 80%;
+    }
+
+    .first-container-absolute-content h1{
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .first-container-absolute-content p{
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .first-container-right-content{
+        margin: 2rem;
+        background-color: #37474F;
+    }
+
+    /* Second container */
+    .second-container{
+        min-height: auto;
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;;
+    }
+
+    .second-container-blog-card-image{
+        min-height: 200px;
+        min-width: 200px;
+        overflow: hidden;
+    }
+
+    /* Third container */
+    .third-container{
+        min-height: auto;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .third-container-subcontainer{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-card{
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin:3rem;
+    }
 }
 
-.content-eighth-component h1{
-   font-size: 60px;
-   margin-bottom: 0.7rem;
+/*---------------------- 675 (900, 800, 400) ------------------------ */
+
+@media(max-width:675px){
+    .first-container-absolute-content{
+        position: absolute;
+        background-color: black;
+        color: white;
+        opacity: 80%;
+        width: auto;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .second-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .third-container-subcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }
 
-.content-eighth-component p{
-    margin-top: 1.5rem;
-    width: 500px;
-    font-size: 20px;
-}
+/*---------------------- 400 ------------------------ */
 
-.eighth-component-img{
-   grid-column: 2/3;
-   margin: 5rem 0rem 3rem 0rem;
-}
+@media(max-width:400px){
+    /* First container */
+    .first-container-left-content{
+        max-height: auto;
+        margin: 2vw;
+    }
 
-.eighth-component-img img{
-    height: 500px;
+    .first-container-absolute-content h1{
+        margin-left: 2vw;
+        margin-top: 2vw;
+    }
+
+    .first-container-absolute-content p{
+        margin-left: 2vw;
+        margin-top: 2vw;
+    }
+
+    .first-container-right-content{
+        margin: 2vw;
+        background-color: #37474F;
+    }
+
+    /* Second container */
+    .second-container{
+        min-height: auto;
+    }
+
+    .blog-card-image{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .blog-card{
+        margin: 5vw;
+        padding: 2vw;
+    }
+
+    /* Third container */
+    .third-container{
+        min-height: auto;
+    }
+
+    .third-container-button{
+        padding: 1rem 3rem 1rem 3rem;
+        font-size: 15px;
+        margin: 2rem 0 2rem 0;
+    }
 }
-    

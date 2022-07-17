@@ -4,7 +4,10 @@
         <!--https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css-->
         <meta charset ="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <title>STOCKZO->Home Page</title>
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script src="greeting.js"></script>
@@ -15,28 +18,47 @@
         <!--  Header  -->
         <header class="header">
             <div class="logo-header grid-item">
-               <h1>STOCKZO</h1>
+                <a href="index.html"><img class="company_logo" src="company logo.png"></a>
             </div>
 
             <div class="menu-items-header">
                <ul>
                    <li class="menu-items"><a href="index.html">HOME</a></li>
-                   <li class="menu-items"><a href="#">ABOUT US</a></li>
-                   <li class="menu-items"><a href="#">SERVICES</a></li>
+                   <li class="menu-items"><a href="about.html">ABOUT US</a></li>
+                   <li class="menu-items"><a href="services.html">SERVICES</a></li>
                    <li class="menu-items"><a href="pricing.html">PRICING</a></li>
-                   <li class="menu-items"><a href="#login">LOGIN</a></li>
+                   <li class="menu-items"><a href="index.html#login">LOGIN</a></li>
                    <li class="menu-items"><a href="blog.html">BLOGS</a></li>
-                   <li class="menu-items"><a href="#contact">CONTACT</a></li>
+                   <li class="menu-items"><a href="index.html#contact">CONTACT</a></li>
                </ul>
             </div>
 
             <div class="social-media-icons-header grid-item">
                 <ul>
-                  <li><a href="#"><img class="favicons" src="images/twitter-icon.png" alt="twitter icon"></a></li>
-                  <li><a href="#"><img class="favicons" src="images/instagram-icon.png" alt="instagram icon"></a></li>
-                  <li><a href="#"><img class="favicons" src="images/facebook-icon.png" alt="facebook icon"></a></li>
+                  <li><a href="#"><img class="favicons" src="twitter-icon.png" alt="twitter icon"></a></li>
+                  <li><a href="#"><img class="favicons" src="instagram-icon.png" alt="instagram icon"></a></li>
+                  <li><a href="#"><img class="favicons" src="facebook-icon.png" alt="facebook icon"></a></li>
                 </ul>
             </div>
+
+             <nav id="navbar" class="navigation" role="navigation">
+                <input id="toggle1" type="checkbox" />
+                <label class="hamburger1" for="toggle1">
+                  <div class="top"></div>
+                  <div class="meat"></div>
+                  <div class="bottom"></div>
+                </label>
+            
+                <nav class="menu1">
+                  <a class="link1" href="index.html">HOME</a>
+                  <a class="link1" href="about.html">ABOUT US</a>
+                  <a class="link1" href="services.html">SERVICES</a>
+                  <a class="link1" href="pricing.html">PRICING</a>
+                  <a class="link1" href="index.html#login">LOGIN</a>
+                  <a class="link1" href="blog.html">BLOGS</a>
+                  <a class="link1" href="index.html#contact">CONTACT</a>
+                </nav>
+             </nav>
         </header>
 
         <!--   First Component   -->
@@ -48,7 +70,7 @@
                 <button>Get Started</button>
             </div>
 
-            <img src="images/Business Plan-cuate (3).png" alt="img">
+            <img src="Business Plan-cuate (3).png" alt="img">
         </div>
 
       <!--    Break     -->
@@ -56,13 +78,13 @@
 
      <!-- <div class="break-img"> -->
         
-      <img class="first-separator" src="images/separator1.png" alt="img">
+      <img class="first-separator" src="separator1.png" alt="img">
 
       <!--   Second Component   -->
 
       <section class="second-component">
           
-            <img src="images/Woman thinking-cuate (1).png" alt="img">
+            <img src="Woman thinking-cuate (1).png" alt="img">
 
           <div class="content-second-component">
                <h4>What is</h4>
@@ -80,7 +102,7 @@
       <!--     Break    -->
 
 
-      <img class="first-separator" src="images/separator1.png" alt="img">
+      <img class="first-separator" src="separator1.png" alt="img">
 
 
 
@@ -103,7 +125,7 @@
             <div class="card">
                     
                     <div class="card-img">
-                        <img src="images/WhatsApp Image 2022-06-21 at 4.23.32 PM.jpeg" alt="img"/>
+                        <img src="WhatsApp Image 2022-06-21 at 4.23.32 PM.jpeg" alt="img"/>
     
                     </div>
                     <div class="card-header">
@@ -120,7 +142,7 @@
 
                 <div class="card2">
                     <div class="card-img">
-                        <img src="images/Business Plan-cuate (3).png" alt="img"/>
+                        <img src="Business Plan-cuate (3).png" alt="img"/>
     
                     </div>
                     <div class="card-header">
@@ -147,7 +169,7 @@
     
      <!-- <div class="break-img"></div>  -->
 
-      <img class="first-separator" src="images/separator2.png" alt="img">
+      <img class="first-separator" src="separator2.png" alt="img">
 
       <!--     Fourth   Component   -->
 
@@ -160,7 +182,7 @@
         <div class="team-card-grid">
             <div class="team-card">
                 <div class="team-card-img">
-                    <img src="images/Woman thinking-cuate (1).png" at="" >
+                    <img src="Woman thinking-cuate (1).png" at="" >
                 </div>
                 <div class="team-card-position">Lorem ipsum dolor</div>
                 <div class="team-card-name"><h2>Full Name</h2></div>
@@ -169,7 +191,7 @@
     
             <div class="team-card2">
                 <div class="team-card-img">
-                    <img src="images/Woman thinking-cuate (1).png" at="" >
+                    <img src="Woman thinking-cuate (1).png" at="" >
                 </div>
                 <div class="team-card-position">Lorem ipsum dolor</div>
                 <div class="team-card-name"><h2>Full Name</h2></div>
@@ -178,7 +200,7 @@
     
             <div class="team-card3">
                 <div class="team-card-img">
-                    <img src="images/Woman thinking-cuate (1).png" at="" >
+                    <img src="Woman thinking-cuate (1).png" at="" >
                 </div>
                 <div class="team-card-position">Lorem ipsum dolor</div>
                 <div class="team-card-name"><h2>Full Name</h2></div>
@@ -190,7 +212,7 @@
         
       </section>
 
-      <img class="first-separator" src="images/separator3.png" alt="img">
+      <img class="first-separator" src="separator3.png" alt="img">
       <!--    Fifth Component    -->
 
       <section class="fifth-component" id="login">
@@ -222,7 +244,7 @@
          </div>
 
           <div class="fifth-component-img">
-            <img src="images/Business Plan-cuate (3).png" alt="">
+            <img src="Business Plan-cuate (3).png" alt="">
           </div>
 
       </section>
@@ -234,7 +256,7 @@
       <!---     Sixth Component      -->
 
 
-      <img class="first-separator" src="images/separator4.png" alt="img">
+      <img class="first-separator" src="separator4.png" alt="img">
       <section class="sixth-component">
 
         <h1>Here's what our users have to say</h1>
@@ -277,7 +299,7 @@
      <!-- <div class="break-img"></div>  -->
 
 
-      <img class="first-separator" src="images/separator5.png" alt="img">
+      <img class="first-separator" src="separator5.png" alt="img">
       <!--     Seventh Component     -->
 
       <section class="seventh-component" id="blogs">
@@ -316,13 +338,13 @@
 
 
 
-      <img class="first-separator" src="images/separator6.png" alt="img">
+      <img class="first-separator" src="separator6.png" alt="img">
       <!--     Eighth Component     -->
 
       <section class="eighth-component" id="contact">
 
         <div class="eighth-component-img">
-            <img src="images/Questions-cuate.png" alt=""/>
+            <img src="Questions-cuate.png" alt=""/>
         </div>
 
         <div class="content-eighth-component">
@@ -362,9 +384,9 @@
                 </ul>
 
                 <ul class="social-media-icons-footer">
-                  <li><a href="#"><img class="favicons" src="images/twitter-icon.png" alt="twitter icon"></a></li>
-                  <li><a href="#"><img class="favicons" src="images/instagram-icon.png" alt="instagram icon"></a></li>
-                  <li><a href="#"><img class="favicons" src="images/facebook-icon.png" alt="facebook icon"></a></li>
+                  <li><a href="#"><img class="favicons" src="twitter-icon.png" alt="twitter icon"></a></li>
+                  <li><a href="#"><img class="favicons" src="instagram-icon.png" alt="instagram icon"></a></li>
+                  <li><a href="#"><img class="favicons" src="facebook-icon.png" alt="facebook icon"></a></li>
                 </ul>
             </div>
 

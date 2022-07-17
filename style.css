@@ -19,12 +19,15 @@ img{
     object-fit: cover;
 }
 
+/* all header related stuff */
+
 .header{
     display: grid;
     grid-template-columns: 1fr  7fr 1fr;
     border-bottom: 1.5px solid black;
     width: 100%;
 }
+
 
 a{
     text-decoration: none;
@@ -95,6 +98,11 @@ li{
     border-radius: 999px;
 }
 
+/* hide hamburger menu */
+.navigation{
+    display: none;
+}
+
 @media(max-width:950px){
     .favicons{
         height: 30px;
@@ -106,10 +114,195 @@ li{
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 7fr 1fr;
     }
+    .logo-header img{
+        width: auto;
+        height: auto;
+        max-width: 150px;
+        max-height: 300px;
+    }
     .logo-header{
         grid-area: 1 / 1 / 1 / 9;
     }
 }
+
+@media(max-width:800px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: auto;
+    }
+    .header img{
+        width: auto;
+        height: auto;
+        max-width: 150px;
+        max-height: 300px;
+    }
+    .logo-header{
+        font-weight: bold;
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+    }
+    .menu-items-header{
+        display: none;
+        /*display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        */
+    }
+    .menu-items-header ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 1rem 0;
+    }
+    .grid-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-media-icons-header{
+        display: none;
+        margin: 2vw 0 2vw 0;
+    }
+
+    /* hamburger menu */
+
+    .navigation{
+        display: block;
+    }
+    
+    /* Hamburger */
+    .hamburger1 {
+      height: 45px;
+      display: -ms-grid;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      margin-right: 1rem;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      justify-items: center;
+      z-index: 120;
+    }
+    
+    .hamburger1 div {
+      background-color: rgb(61, 61, 61);
+      position: relative;
+      width: 30px;
+      height: 5px;
+      margin-top: 7px;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+    
+    #toggle1 {
+      display: none;
+    }
+    
+    #toggle1:checked + .hamburger1 .top {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      margin-top: 22.5px;
+    }
+    
+    #toggle1:checked + .hamburger1 .meat {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      margin-top: -5px;
+    }
+    
+    #toggle1:checked + .hamburger1 .bottom {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    
+    #toggle1:checked ~ .menu1 {
+      height: 400px;
+    }
+    
+    
+    /* Menu */
+    .menu1 {
+      top: 0vh;
+      margin: 20px;
+      display: -ms-grid;
+      display: grid;
+      grid-template-rows: 1fr repeat(4, 0.5fr);
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      clear: both;
+      width: auto;
+      height: 0px;
+      transition: height .4s ease;
+      z-index: 120;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    
+    .menu1 a:first-child {
+      margin-top: 2rem;
+    }
+    
+    .menu1 a:last-child {
+      margin-bottom: 2rem;
+    }
+    
+    .link1 {
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: black;
+    }
+    
+    .link1:hover {
+      background-color: #fff;
+      color: rgb(107, 107, 107);
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+}
+
+@media(max-width:400px){
+    /*  First Component  */
+    
+    .logo-header{
+        font-size: 5vw;
+    }
+    .menu-items-header ul li a{
+        font-size: 5vw;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+
+    /* Hamburger */
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}
+
+/* end - header related */
+
+
+
 
 /*  First Component  */
 
@@ -234,12 +427,12 @@ li{
  .third-component{
      background-color: white;
      display: grid;
-     grid-template-columns: 1fr 1fr;
+     grid-template-columns: 0.5fr 1fr;
      justify-items: center;
      align-items: center;
      gap: 2.5rem;
      margin-left: 5rem;
-     overflow: scroll;
+     overflow-x: scroll;
  }
 
  .content-third-component{
@@ -919,46 +1112,6 @@ li{
 }
 
 @media(max-width:800px){
-    .header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-    }
-    .logo-header{
-        font-weight: bold;
-        margin-top: 1.5rem;
-        font-size: 1.5rem;
-    }
-    .menu-items-header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .menu-items-header ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .menu-items{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem 0 1rem 0;
-    }
-    .grid-item{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .social-media-icons-header{
-        margin: 2vw 0 2vw 0;
-    }
-
     /* First comopnent */
 
     .first-component{
@@ -1154,13 +1307,6 @@ li{
 
 @media(max-width:400px){
     /*  First Component  */
-    
-    .logo-header{
-        font-size: 8vw;
-    }
-    .menu-items-header ul li a{
-        font-size: 5vw;
-    }
     .first-component{
         min-height: auto;
         background-color: white;
