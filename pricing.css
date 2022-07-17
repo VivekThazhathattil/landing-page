@@ -28,6 +28,14 @@ img{
     width: 100%;
 }
 
+table{
+    min-height: 50vh;
+    min-width: 50vw;
+    width: 90vw;
+    margin: auto;
+    overflow: scroll;
+}
+
 
 a{
     text-decoration: none;
