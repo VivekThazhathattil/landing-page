@@ -224,7 +224,7 @@ li{
     }
     
     #toggle1:checked ~ .menu1 {
-      height: 400px;
+      height: 300px;
     }
     
     
@@ -234,7 +234,6 @@ li{
       margin: 20px;
       display: -ms-grid;
       display: grid;
-      grid-template-rows: 1fr repeat(4, 0.5fr);
       padding: 0;
       list-style: none;
       overflow: hidden;
@@ -248,11 +247,9 @@ li{
     }
     
     .menu1 a:first-child {
-      margin-top: 2rem;
     }
     
     .menu1 a:last-child {
-      margin-bottom: 2rem;
     }
     
     .link1 {
