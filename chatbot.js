@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 		jQuery(this).parents('.botIcon').addClass('showMessenger');
 	});
 	
-	/* Chatboat Code */
+	/* Chatbot Code */
 	$(document).on("submit", "#messenger", function(e) {
 		e.preventDefault();
 
@@ -27,10 +27,10 @@ jQuery(document).ready(function($) {
 		nowhoue = nowtime.getHours();
 
 		function userMsg(msg) {
-			$('.Messages_list').append('<div class="msg user"><span class="avtr"><figure style="background-image: url(https://mrseankumar25.github.io/Sandeep-Kumar-Frontend-Developer-UI-Specialist/images/avatar.png)"></figure></span><span class="responsText">' + mainval + '</span></div>');
+			$('.Messages_list').append('<div class="msg user"><span class="avtr"><figure style="background-image: url(chatbot-avatar.png)"></figure></span><span class="responsText">' + mainval + '</span></div>');
 		};
 		function appendMsg(msg) {
-			$('.Messages_list').append('<div class="msg"><span class="avtr"><figure style="background-image: url(https://mrseankumar25.github.io/Sandeep-Kumar-Frontend-Developer-UI-Specialist/images/avatar.png)"></figure></span><span class="responsText">' + msg + '</span></div>');
+			$('.Messages_list').append('<div class="msg"><span class="avtr"><figure style="background-image: url(chatbot-avatar.png)"></figure></span><span class="responsText">' + msg + '</span></div>');
 			$("[name='msg']").val("");
 		};
 
@@ -42,9 +42,9 @@ jQuery(document).ready(function($) {
 			} else if(nowhoue >= 10 && nowhoue <= 12) {
 				appendMsg('hi');
 			} else if(nowhoue >= 0 && nowhoue <= 10) {
-				appendMsg('good morning');
+				appendMsg('Good Morning');
 			} else {
-				appendMsg('good evening');
+				appendMsg('Good Evening');
 			}
 
 			appendMsg("what's you name?");
@@ -56,28 +56,28 @@ jQuery(document).ready(function($) {
 				appendMsg("is it helpful? (yes/no)");
 
 			} else if (val.indexOf("boyfriend") > -1 || val.indexOf("bf") > -1) {
-				appendMsg("bye something for him.");
-				appendMsg("is it helpful? (yes/no)");
+				appendMsg("Buy something for him.");
+				appendMsg("Is it helpful? (yes/no)");
 			} else {
-				appendMsg("sorry, i'm not able to get you point, please ask something else.");
+				appendMsg("Sorry, i'm not able to get you point, please ask something else.");
 			}
 		} else if( val.indexOf("yes") > -1) {
 
 			var nowtime = new Date();
 			var nowhoue = nowtime.getHours();
-			appendMsg("it's my pleaser that i can help you");
+			appendMsg("It's my pleasure to help you!");
 
 			saybye();
 		} else if( val.indexOf("no") > -1) {
 
 			var nowtime = new Date();
 			var nowhoue = nowtime.getHours();
-			appendMsg("it's my bad that i can't able to help you. please try letter");
+			appendMsg("It's my bad that i can't able to help you. please try letter");
 
 			saybye();
-		} else if( val.indexOf("my name is ") > -1 || val.indexOf("i am ") > -1 || val.indexOf("i'm ") > -1 || val.split(" ").length < 2 ) {/*|| mainval != ""*/
+		} else if( val.indexOf("My name is ") > -1 || val.indexOf("i am ") > -1 || val.indexOf("i'm ") > -1 || val.split(" ").length < 2 ) {/*|| mainval != ""*/
 			// var name = "";
-			if(val.indexOf("my name is") > -1) {
+			if(val.indexOf("My name is") > -1) {
 				name = val.replace("my name is", "");
 			}
 
@@ -96,21 +96,21 @@ jQuery(document).ready(function($) {
 			// appendMsg("hi " + name + ", how can i help you?");
 			appendMsg("hi " + name + ", how can i help you?");
 		} else {
-			appendMsg("sorry i'm not able to understand what do you want to say");
+			appendMsg("Sorry I'm not able to understand what you want to say");
 		}
 
 		function saybye() {
 			if (nowhoue <= 10) {
-				appendMsg(" have nice day! :)");
+				appendMsg(" Have a nice day! :)");
 			} else if (nowhoue >= 11 || nowhoue <= 20) {
-				appendMsg(" bye!");
+				appendMsg(" Bye!");
 			} else {
-				appendMsg(" good night!");
+				appendMsg(" Good night!");
 			}
 		}
 
 		var lastMsg = $('.Messages_list').find('.msg').last().offset().top;
 		$('.Messages').animate({scrollTop: lastMsg}, 'slow');
 	});
-	/* Chatboat Code */
+	/* Chatbot Code */
 })
