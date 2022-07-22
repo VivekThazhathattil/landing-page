@@ -74,7 +74,8 @@ jQuery(document).ready(function($) {
                 var B_ID = "168080";
                 var KEY = "XJ0smsPw57NkP1gn";
                 var UID = "1";
-                await axios.get('http://api.brainshop.ai/get?bid=' + B_ID + '&key=' + KEY + '&uid=' + UID + '&msg=' + val.split(' ').join('+')).then(data =>{
+                axios.defaults.headers.post['Content-Type'] ='application/x-www-form-urlencoded';
+                await axios.get('https://api.brainshop.ai/get?bid=' + B_ID + '&key=' + KEY + '&uid=' + UID + '&msg=' + val.split(' ').join('+')).then(data =>{
                     res = JSON.stringify(data.data.response);
                 });
                 return res;
