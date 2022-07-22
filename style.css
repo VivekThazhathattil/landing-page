@@ -305,7 +305,7 @@ li{
 /* Chatbot css -------------------------------- */
 /* Chatbot */
  .botIcon {
-    top: 90vh;
+    top: 85vh;
     left: 15px;
     position: fixed;
     z-index: 9999;
