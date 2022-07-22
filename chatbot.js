@@ -49,33 +49,7 @@ jQuery(document).ready(function($) {
 
 			appendMsg("what's you name?");
 
-		} else if( val.indexOf("i have problem with") > -1) {
-			if (val.indexOf("girlfriend") > -1 || val.indexOf("gf") > -1) {
-
-				appendMsg("take out your girlfriend, for dinner or movie.");
-				appendMsg("is it helpful? (yes/no)");
-
-			} else if (val.indexOf("boyfriend") > -1 || val.indexOf("bf") > -1) {
-				appendMsg("Buy something for him.");
-				appendMsg("Is it helpful? (yes/no)");
-			} else {
-				appendMsg("Sorry, i'm not able to get you point, please ask something else.");
-			}
-		} else if( val.indexOf("yes") > -1) {
-
-			var nowtime = new Date();
-			var nowhoue = nowtime.getHours();
-			appendMsg("It's my pleasure to help you!");
-
-			saybye();
-		} else if( val.indexOf("no") > -1) {
-
-			var nowtime = new Date();
-			var nowhoue = nowtime.getHours();
-			appendMsg("It's my bad that i can't able to help you. please try letter");
-
-			saybye();
-		} else if( val.indexOf("My name is ") > -1 || val.indexOf("i am ") > -1 || val.indexOf("i'm ") > -1 || val.split(" ").length < 2 ) {/*|| mainval != ""*/
+		}else if( val.indexOf("My name is ") > -1 || val.indexOf("i am ") > -1 || val.indexOf("i'm ") > -1) {/*|| mainval != ""*/
 			// var name = "";
 			if(val.indexOf("My name is") > -1) {
 				name = val.replace("my name is", "");
@@ -93,9 +67,19 @@ jQuery(document).ready(function($) {
 				name = mainval;
 			}
 
-			// appendMsg("hi " + name + ", how can i help you?");
-			appendMsg("hi " + name + ", how can i help you?");
-		} else {
+			appendMsg("Hi " + name + ", how can we help you?");
+		}else {
+            async function getReply(){
+                res = "";
+                var B_ID = "168080";
+                var KEY = "XJ0smsPw57NkP1gn";
+                var UID = "1";
+                await axios.get('http://api.brainshop.ai/get?bid=' + B_ID + '&key=' + KEY + '&uid=' + UID + '&msg=' + val.split(' ').join('+')).then(data =>{
+                    res = JSON.stringify(data.data.response);
+                });
+                return res;
+            }
+            getReply().then(data => console.log(data));
 			appendMsg("Sorry I'm not able to understand what you want to say");
 		}
 
