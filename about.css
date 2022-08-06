@@ -652,7 +652,7 @@ blockquote {
 }
 
 .timg {
-  margin-top: 40px;
+  width: 90vw;
 }
 
 @media (max-width: 600px) {
@@ -665,9 +665,6 @@ blockquote {
   .g1 {
     line-height: 1;
   }
-  .timg {
-    width: 300px;
-  }
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
@@ -679,9 +676,6 @@ blockquote {
   }
   .g1 {
     line-height: 1;
-  }
-  .timg {
-    width: 300px;
   }
 }
 
@@ -721,8 +715,7 @@ blockquote {
 }
 
 .vimg {
-  display: block;
-  float: right;
+  max-width: 50vw;
 }
 
 @media (max-width: 800px) {
@@ -757,9 +750,6 @@ blockquote {
   .v3 img {
     width: 120px;
   }
-  .vimg img {
-    width: 300px;
-  }
 }
 
 @media (max-width: 500px) {
@@ -792,9 +782,6 @@ blockquote {
   }
   .v3 img {
     width: 120px;
-  }
-  .vimg img {
-    width: 300px;
   }
 }
 
