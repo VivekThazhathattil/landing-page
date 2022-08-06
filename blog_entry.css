@@ -63,6 +63,10 @@ li {
   justify-content: space-around;
 }
 
+.entry-content {
+  margin: 10px;
+}
+
 .menu-items-header li a {
   display: grid;
   margin-left: 0.3rem;

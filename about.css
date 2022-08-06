@@ -684,7 +684,7 @@ blockquote {
 .values {
   display: grid;
   grid-gap: 40px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   margin-top: 5rem;
   min-height: 600px;
 }
@@ -702,12 +702,20 @@ blockquote {
   padding: 20px;
 }
 
+.v2 h3 {
+  margin: 20px 0 20px 0;
+}
+
 .v3 {
   background-color: rgb(241, 239, 239);
   color: black;
   border-radius: 0 20px 20px 0;
   margin: 20px;
   padding: 20px;
+}
+
+.v3 h3 {
+  margin: 20px 0 20px 0;
 }
 
 .v3 p {
@@ -718,13 +726,17 @@ blockquote {
   max-width: 50vw;
 }
 
+.imgv {
+  max-width: min(10em, 50vw);
+}
+
 @media (max-width: 800px) {
   .values {
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-top: 20px;
-    max-width: 75vw;
+    max-width: 90vw;
     min-height: 40vh;
     max-height: 90vh;
     height: auto;
