@@ -817,12 +817,20 @@ li {
 .seventh-component h1 {
   text-align: center;
   font-size: 60px;
+  font-weight: 800;
 }
 
 .seventh-component-card-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+@media (max-width: 760px) {
+  .seventh-component-card-group {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .seventh-component-card {
@@ -836,6 +844,8 @@ li {
   font-size: 19px;
   margin: 5rem 1rem;
   margin-bottom: 2rem;
+  font-weight: 800;
+  padding: 5px;
 }
 
 .seventh-component-card p {

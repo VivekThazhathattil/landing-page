@@ -604,6 +604,10 @@ blockquote {
   min-height: 600px;
 }
 
+.designation {
+  margin: 5px;
+}
+
 .teamgrid {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -641,7 +645,6 @@ blockquote {
 
 .g1 {
   text-align: center;
-  line-height: 5px;
 }
 
 .g1 p {
@@ -724,9 +727,15 @@ blockquote {
 
 @media (max-width: 800px) {
   .values {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     margin-top: 20px;
-    width: 90%;
-    grid-gap: 20px;
+    max-width: 75vw;
+    min-height: 40vh;
+    max-height: 90vh;
+    height: auto;
+    padding: 5px;
   }
   .v1 {
     padding: 0;
@@ -758,6 +767,8 @@ blockquote {
     display: flex;
     flex-direction: column;
     margin: auto;
+    min-width: auto;
+    max-width: auto;
   }
 }
 
