@@ -15,6 +15,11 @@ img {
   object-fit: cover;
 }
 
+p {
+  margin-top: 10px;
+  text-indent: 30px;
+}
+
 /* all header related stuff */
 
 .header {
