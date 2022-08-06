@@ -74,7 +74,8 @@ jQuery(document).ready(function($) {
                 var B_ID = "168080";
                 var KEY = "XJ0smsPw57NkP1gn";
                 var UID = "1";
-                axios.defaults.headers.post['Content-Type'] ='application/x-www-form-urlencoded';
+                axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
+                axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
                 await axios.get('https://api.brainshop.ai/get?bid=' + B_ID + '&key=' + KEY + '&uid=' + UID + '&msg=' + val.split(' ').join('+')).then(data =>{
                     res = JSON.stringify(data.data.response);
                 });
@@ -98,4 +99,4 @@ jQuery(document).ready(function($) {
 		$('.Messages').animate({scrollTop: lastMsg}, 'slow');
 	});
 	/* Chatbot Code */
-})
+});
